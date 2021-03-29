@@ -1,0 +1,266 @@
+﻿<Window x:Class="Betaalsysteem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Betaalsysteem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.RowSpan="3" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="1" Grid.Row="0" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_2"><Image Source="assets/5eurocent.jpg" Width="70" Height="50" Stretch="Fill"/></Button>
+                    
+                    <TextBox x:Name="tbKeer1" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="2" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_3">
+                        <Image Source="assets/10eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer2" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="4" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_4">
+                        <Image Source="assets/20eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer3" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="6" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_5">
+                        <Image Source="assets/50eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer4" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="8" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_6">
+                        <Image Source="assets/1euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer5" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="10" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_7">
+                        <Image Source="assets/2euro.jpeg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer6" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="12" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_8">
+                        <Image Source="assets/5 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer7" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="14" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_9">
+                        <Image Source="assets/10 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer8" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="16" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_10">
+                        <Image Source="assets/20 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer9" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="18" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_11">
+                        <Image Source="assets/50 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer10" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="20" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_12">
+                        <Image Source="assets/100 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer11" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="22" Background="Black">
+                <WrapPanel Width="300">
+                    <Button Click="Button_Click_13">
+                        <Image Source="assets/200 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    </Button>
+
+                    <TextBox x:Name="tbKeer12" Width="50" HorizontalAlignment="Right" Text="0"/>
+                </WrapPanel>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="3" Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="1" HorizontalAlignment="Center" Content="Bestellen:" FontSize="15" Foreground="White"/>
+                <Label Grid.Row="1" Content="Fietsen:" FontSize="12" Foreground="White"/>
+                <Label Grid.Row="2" Content="Verzekering:" FontSize="12" Foreground="White"/>
+                <Label Grid.Row="3" Content="Services:" FontSize="12" Foreground="White"/>
+
+                <ComboBox DropDownOpened="OnDropDownOpened" DropDownClosed="OnDropDownClosed" Grid.Row="1" Grid.Column="1" x:Name="cmbFiets">
+                    <ComboBoxItem  >Aanhangfiets  € 20,00</ComboBoxItem>
+                    <ComboBoxItem >Bakfiets      € 35,00</ComboBoxItem>
+                    <ComboBoxItem>Driewielfiets  € 30,00</ComboBoxItem>
+                    <ComboBoxItem>Elektrische fiets  € 30,00</ComboBoxItem>
+                    <ComboBoxItem>Kinderfiets  € 15,00</ComboBoxItem>
+                    <ComboBoxItem>Ligfiets € 45,00</ComboBoxItem>
+                    <ComboBoxItem>Oma fiets € 12,50</ComboBoxItem>
+                    <ComboBoxItem>Racefiets  € 15,00</ComboBoxItem>
+                    <ComboBoxItem>Speed pedelec  € 15,00</ComboBoxItem>
+                    <ComboBoxItem>Stadfiets € 12,50</ComboBoxItem>
+                    <ComboBoxItem>Vouwfiets € 10,00</ComboBoxItem>
+                    <ComboBoxItem>Zitfiets € 15,00</ComboBoxItem>
+                </ComboBox>
+
+                <ComboBox DropDownOpened="OnDropDownOpened1" DropDownClosed="OnDropDownClosed1" Grid.Row="2" Grid.Column="1" x:Name="cmbVerzekering">
+                    <ComboBoxItem>NVT€ 0,00</ComboBoxItem>
+                    <ComboBoxItem>Beschadigingen € 5,00</ComboBoxItem>
+                    <ComboBoxItem>Diefstal € 10,00</ComboBoxItem>
+                    <ComboBoxItem>Rechtsbijstand € 5,00</ComboBoxItem>
+                    <ComboBoxItem>Ongevallen € 2,50</ComboBoxItem>
+                </ComboBox>
+
+                <ComboBox DropDownOpened="OnDropDownOpened2" DropDownClosed="OnDropDownClosed2" Grid.Row="3" Grid.Column="1" x:Name="cmbService">
+                    <ComboBoxItem>NVT € 0,00</ComboBoxItem>
+                    <ComboBoxItem>Ophaalservice € 15,00</ComboBoxItem>
+                    <ComboBoxItem>Regenpak € 10,00</ComboBoxItem>
+                    <ComboBoxItem>Lunchpakket basis € 12,50</ComboBoxItem>
+                    <ComboBoxItem>Lunchpakket uitgebreid € 20,00</ComboBoxItem>
+                </ComboBox>
+
+                
+                <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Dagen:" Foreground="White" FontSize="10"/>
+                <TextBox x:Name="tbDagen" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Text="0" Foreground="White" Background="Black" Margin="139,0,0,35" Height="18" VerticalAlignment="Bottom"/>
+
+                <Button Background="Blue" FontSize="13" Foreground="White" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Bestel Artikel" Margin="0,35,0,0" Click="Button_Click"/>
+
+            </Grid>
+            <ListBox  x:Name="lbBestelling" Grid.Row="1" Background="Black" Foreground="White" MouseDoubleClick="lbBestelling_MouseDoubleClick"/>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Content="Te betalen bedrag:" Grid.Column="1" Grid.Row="2"/>
+            <TextBlock x:Name="tbPrijs" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Text="€ 0,00" FontSize="20" Foreground="White"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="3" Background="Black">
+            <Label Content="Betalen:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="Geef handmatig bedrag in:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Margin="0,30,0,0"/>
+            <Button Background="DarkBlue" VerticalAlignment="Top" Width="150" Content="Geef totaalbedrag in" Foreground="White" FontSize="15" Margin="0,55,0,0" Click="Button_Click_14" />
+            <Label Content="Totaal gegeven bedrag:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,80,0,0"/>
+            <TextBox VerticalAlignment="Top" x:Name="tbHandmatig" HorizontalAlignment="Center" Margin="0,110,0,0" FontSize="30" Text="€ 0,00" Background="Black" Foreground="White"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.RowSpan="3"  Grid.Column="5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Background="Black">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Content="Afrekenen" FontSize="20"/>
+                <TextBlock x:Name="tbPrijs1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,0,0" Foreground="Green" Text="€ 0,00"  FontSize="30"/>
+            </Grid>
+
+            <ListBox  x:Name="lbBestelling1" Grid.Row="2" Background="Black" Foreground="White" MouseDoubleClick="lbBestelling_MouseDoubleClick"/>
+
+            <Grid Grid.Row="3" Background="Black">
+                <Button VerticalAlignment="Bottom"  HorizontalAlignment="Center" Content="Volgende klant" Background="Blue" Foreground="White" FontSize="15" Height="40" Click="Button_Click_1"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
