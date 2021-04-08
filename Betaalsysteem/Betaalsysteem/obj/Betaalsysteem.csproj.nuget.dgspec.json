@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj": {}
+    "F:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj": {}
   },
   "projects": {
-    "C:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj": {
+    "F:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj",
+        "projectUniqueName": "F:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj",
         "projectName": "Betaalsysteem",
-        "projectPath": "C:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj",
+        "projectPath": "F:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\Betaalsysteem.csproj",
         "packagesPath": "C:\\Users\\cumar\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\obj\\",
+        "outputPath": "F:\\School\\Leer jaar 1\\2\\Project\\seconde-project\\Betaalsysteem\\Betaalsysteem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

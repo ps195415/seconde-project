@@ -1,0 +1,51 @@
+.container-Footer{
+    width: 100%;
+    height: 100%;
+}
+
+.row-F{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer{
+    position: relative;
+    height: 300px;
+    top: 100px;
+    background-color: lightblue;
+    color: black;
+}
+
+.footerTitel{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-1{
+    padding-top: 50px;
+    flex-basis: 33%;
+}
+
+.btnummer{
+    padding-top: 20px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:850px){
+    .col-1{
+        padding-top: 10px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

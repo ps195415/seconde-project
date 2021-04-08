@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Betaalsysteem
@@ -23,7 +14,7 @@ namespace Betaalsysteem
     {
 
 
-       
+
         double _AantalGeld = 0;
         double _Handmatig = 0;
 
@@ -44,11 +35,11 @@ namespace Betaalsysteem
 
         double _dagen = 0;
 
- 
+
         double totaal = 0;
         double KrijgtTerug = 0;
         double _Totaalbedrag = 0;
-     
+
 
         double _cmbTotaalbedrag = 0.00;
         double _cmbTotaalbedrag1 = 0.00;
@@ -78,15 +69,6 @@ namespace Betaalsysteem
         }
 
 
-
-
-
-
-
-
-
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _dagen = double.Parse(tbDagen.Text);
@@ -104,7 +86,7 @@ namespace Betaalsysteem
                     string[] bedrag = geknitString.Split('€');
                     _cmbTotaalbedrag = double.Parse(bedrag[1]);
 
-                    
+
                     lbBestelling.Items.Add(geknitString + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag * _dagen + ",00");
                     totaal += (_cmbTotaalbedrag * _dagen);
                     KrijgtTerug -= (_cmbTotaalbedrag * _dagen);
@@ -116,7 +98,7 @@ namespace Betaalsysteem
                     string[] bedrag1 = geknitString1.Split('€');
                     _cmbTotaalbedrag1 = double.Parse(bedrag1[1]);
 
-                   
+
                     lbBestelling.Items.Add(geknitString1 + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag1 * _dagen + ",00");
                     totaal += (_cmbTotaalbedrag1 * _dagen);
                     KrijgtTerug -= (_cmbTotaalbedrag1 * _dagen);
@@ -128,7 +110,7 @@ namespace Betaalsysteem
                     string[] bedrag2 = geknitString2.Split('€');
                     _cmbTotaalbedrag2 = double.Parse(bedrag2[1]);
 
-                   
+
                     lbBestelling.Items.Add(geknitString2 + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag2 * _dagen + ",00");
                     totaal += (_cmbTotaalbedrag2 * _dagen);
                     KrijgtTerug -= (_cmbTotaalbedrag2 * _dagen);
@@ -238,7 +220,7 @@ namespace Betaalsysteem
                     double regel = double.Parse(myStringArray[2]);
                     totaal = totaal - regel;
                     tbPrijs.Text = totaal.ToString("€0.00");
-                   
+
 
 
 
@@ -268,7 +250,7 @@ namespace Betaalsysteem
             else
             {
                 MessageBoxResult myResult = MessageBox.Show("heeft de klant al betaald?", "Vraag", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                     if (myResult == MessageBoxResult.Yes)
+                if (myResult == MessageBoxResult.Yes)
                 {
                     tbPrijs.Text = "€ " + totaal + ",00 ";
                     cmbVerzekering.Visibility = Visibility.Visible;
@@ -498,7 +480,7 @@ namespace Betaalsysteem
                 tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
             }
         }
-//handmatige invoer
+        //handmatige invoer
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
             _Handmatig = double.Parse(tbHandmatig.Text);

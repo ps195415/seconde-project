@@ -88,6 +88,7 @@ header input[type=text] {
     position: relative;
     top: 30px;
     width: 60%;
+    max-width: 900px;
     height: 500px;
   }
 
@@ -135,17 +136,6 @@ header input[type=text] {
     background-color: rgba(0,0,0,0.8);
 }
 
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
   
   /* Fading animation */
 .fade {
@@ -234,13 +224,13 @@ header input[type=text] {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    width: 500px;
+    width: 40%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 10px;        
 }
 
 
-form input[type=text], select, textarea {
+.form input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
@@ -251,7 +241,7 @@ form input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
-form input[type=submit] {
+.form input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -260,14 +250,21 @@ form input[type=submit] {
     cursor: pointer;
   }
   
-form input[type=submit]:hover {
+.form input[type=submit]:hover {
     background-color: #45a049;
   }
 
 
 
   /*dit is voor het openingstijd pagina */
-  .contactInfo {
+
+.container-Tijd{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 130px;
+}
+  
+.contactInfo {
     border-radius: 5px;
     background-color: #cce4e6;
     padding: 20px;
@@ -275,22 +272,31 @@ form input[type=submit]:hover {
     align-self: flex-start;
     position: relative;
     top: 30px;
-  }
+}
 
+.Contact-Img{
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.Contact-Img img{
+    width: 100%;
+}
 
 
 /*dit is voor het over ons pagina  */
 
-.tekst{
-    flex-basis: 60%;
-    max-width: 900px;
+.overOnsText{
+    width: 90%;
+    margin: auto;
 }
 
-
-.img-vanGroep{
-    flex-basis: 40%;
-    max-width: 400px;
-}
   
 
 
@@ -307,6 +313,20 @@ form input[type=submit]:hover {
     .container-main{
         width: 100%;
     }
+    .container-Contact{
+        width: 90%;
+    }
+    .Contact-Img{
+        width: 80%;
+    }
+
+    .container-Tijd{
+        width: 100%;
+    }
+    .contactInfo{
+        width: 80%;
+        margin: auto;
+    }
 
     .mainRow{
         flex-wrap: wrap;
@@ -320,6 +340,12 @@ form input[type=submit]:hover {
     
     .img-vanGroep{
         flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .prev, .next{
+        top: 30%;
     }
 }
 

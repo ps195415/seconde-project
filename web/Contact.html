@@ -8,6 +8,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/stlye.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="img/logo20x20.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/main.js"></script>
@@ -38,6 +39,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="fietsen.html">Fietsen</a></li>
+                    <li><a href="fietsHuren.html">FietsHuren</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                     <li><a href="Openingstijden.html">Openingstijden</a></li>
                     <li><a href="Overons.html">Over ons</a></li>
@@ -47,6 +49,7 @@
                 <a class="closeBtn" style="font-size: 60px;" onclick="ColseBtn()">&times;</a>
                 <a href="index.html">Home</a>
                 <a href="fietsen.html">Fietsen</a>
+                <a href="fietsHuren.html">FietsHuren</a>
                 <a href="Contact.html">Contact</a>
                 <a href="Openingstijden.html">Openingstijden</a>
                 <a href="Overons.html">Over ons</a>
@@ -55,9 +58,9 @@
     </nav>
 
     <main id="main">
-        <div class="container">
+        <div class="container-main">
             <div class="container-Contact">
-                <form action="">
+                <div class="form">
 
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your first name..">
@@ -72,12 +75,41 @@
                     <textarea id="subject" name="subject" placeholder="Write something.."
                         style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
+                    <input onclick="Validation()" type="submit" value="Submit">
 
-                </form>
+                </div>
             </div>
         </div>
     </main>
+
+    <footer id="footer">
+        <div class="container-Footer">
+            <h2 class="footerTitel">Informatie footer</h2>
+            <div class="row-F">
+                <div class="col-1">
+                    <h3>Informatie over winkel</h3>
+                    <p><a href="Overons.html">Over ons</a></p>
+                    <p><a href="Overons.html">Contact</a></p>
+                    <p><a href="Overons.html">E-mail: info@fluitendefietser.nl</a></p>
+                </div>
+                <div class="col-1">
+                    <h3>Social-Media</h3>
+                    <p><a href="">Facebook</a></p>
+                </div>
+                <div class="col-1">
+                    <h3>Algemeene voorwarden</h3>
+                    <p><a href="Overons.html">AGV</a></p>
+                </div>
+                <div class="btnummer">
+                    <div class="jaarduiding">
+                        © 2021 Fluitende Fietser
+                    </div>
+                    <div class="kbnumber">KVK: 88599665 | BTW NL999888492Z09</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

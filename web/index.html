@@ -8,7 +8,8 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/stlye.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="icon" type="image/png" href="img/logo20x20.png"/>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/logo20x20.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/main.js"></script>
 </head>
@@ -39,6 +40,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="fietsen.html">Fietsen</a></li>
+                    <li><a href="fietsHuren.html">FietsHuren</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                     <li><a href="Openingstijden.html">Openingstijden</a></li>
                     <li><a href="Overons.html">Over ons</a></li>
@@ -48,6 +50,7 @@
                 <a class="closeBtn" style="font-size: 60px;" onclick="ColseBtn()">&times;</a>
                 <a href="index.html">Home</a>
                 <a href="fietsen.html">Fietsen</a>
+                <a href="fietsHuren.html">FietsHuren</a>
                 <a href="Contact.html">Contact</a>
                 <a href="Openingstijden.html">Openingstijden</a>
                 <a href="Overons.html">Over ons</a>
@@ -61,33 +64,53 @@
                 <div class="gallarySlider">
                     <div class="slideshow-container">
                         <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
                             <img src="img/verhuur1.jpg" style="width:100%">
                         </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
+                        <div class="mySlides fade" style="display: none;">
                             <img src="img/verhuur2.jpg" style="width:100%">
                         </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
+                        <div class="mySlides fade" style="display: none;">
                             <img src="img/verhuur1.jpg" style="width:100%">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                    <br>
-                </div>
-
-                <div class="OpeningMelding">
-                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Winkel is: <span id="tijdOpenWinkel" ></span></p>
                 </div>
             </div>
         </div>
-        
+
     </main>
+
+    <footer id="footer">
+        <div class="container-Footer">
+            <h2 class="footerTitel">Informatie footer</h2>
+            <div class="row-F">
+                <div class="col-1">
+                    <h3>Informatie over winkel</h3>
+                    <p><a href="Overons.html">Over ons</a></p>
+                    <p><a href="Overons.html">Contact</a></p>
+                    <p><a href="Overons.html">E-mail: info@fluitendefietser.nl</a></p>
+                </div>
+                <div class="col-1">
+                    <h3>Social-Media</h3>
+                    <p><a href="">Facebook</a></p>
+                </div>
+                <div class="col-1">
+                    <h3>Algemeene voorwarden</h3>
+                    <p><a href="Overons.html">AGV</a></p>
+                </div>
+                <div class="btnummer">
+                    <div class="jaarduiding">
+                        © 2021 Fluitende Fietser
+                    </div>
+                    <div class="kbnumber">KVK: 88599665 | BTW NL999888492Z09</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
