@@ -51,35 +51,75 @@ C:\Project omar & seph\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\asset
 C:\Project omar & seph\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5 euro.png
 C:\Project omar & seph\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50 euro.png
 C:\Project omar & seph\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50eurocent.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.exe
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10 euro.png
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\100 euro.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10eurocent.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\1euro.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20 euro.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\200 euro.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20eurocent.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\2euro.jpeg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5 euro.png
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50 euro.png
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50eurocent.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5eurocent.jpg
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.deps.json
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.json
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.dev.json
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.dll
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.pdb
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csprojAssemblyReference.cache
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\App.g.cs
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_Content.g.cs
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.cache
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.lref
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.g.resources
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfoInputs.cache
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfo.cs
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csproj.CoreCompileInputs.cache
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.dll
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.pdb
-C:\School\Leer jaar 1\2\Project\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.genruntimeconfig.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.exe
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10 euro.png
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\100 euro.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10eurocent.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\1euro.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20 euro.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\200 euro.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20eurocent.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\2euro.jpeg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5 euro.png
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50 euro.png
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50eurocent.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5eurocent.jpg
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.deps.json
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.json
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.dev.json
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.dll
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.pdb
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csprojAssemblyReference.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_Content.g.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.lref
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.g.resources
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfoInputs.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfo.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csproj.CoreCompileInputs.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.dll
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.pdb
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.genruntimeconfig.cache
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Klok.g.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Klok.baml
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Rekenmachine.g.cs
+C:\Project\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Rekenmachine.baml
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.exe
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10 euro.png
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\100 euro.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\10eurocent.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\1euro.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20 euro.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\200 euro.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\20eurocent.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\2euro.jpeg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5 euro.png
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50 euro.png
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\50eurocent.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\assets\5eurocent.jpg
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.deps.json
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.json
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.runtimeconfig.dev.json
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.dll
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\bin\Debug\netcoreapp3.1\Betaalsysteem.pdb
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csprojAssemblyReference.cache
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Klok.g.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Rekenmachine.g.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_Content.g.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.cache
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem_MarkupCompile.lref
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Klok.baml
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Rekenmachine.baml
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.g.resources
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfoInputs.cache
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.AssemblyInfo.cs
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.csproj.CoreCompileInputs.cache
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.dll
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.pdb
+C:\Users\cumar\Downloads\Project_omar__seph\Project omar & seph\seconde-project\Betaalsysteem\Betaalsysteem\obj\Debug\netcoreapp3.1\Betaalsysteem.genruntimeconfig.cache

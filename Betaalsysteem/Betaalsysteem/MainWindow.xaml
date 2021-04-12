@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1200">
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
             <RowDefinition Height="2.5*"/>
@@ -54,16 +55,19 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
 
+
+          
+
             <Button Grid.Column="1" Grid.Row="0" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_2"><Image Source="assets/5eurocent.jpg" Width="70" Height="50" Stretch="Fill"/></Button>
+                    <Button ><Image Source="assets/5eurocent.jpg" Width="70" Height="50" Stretch="Fill"/></Button>
                     
                     <TextBox x:Name="tbKeer1" Width="50" HorizontalAlignment="Right" Text="0"/>
                 </WrapPanel>
             </Button>
             <Button Grid.Column="1" Grid.Row="2" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_3">
+                    <Button >
                         <Image Source="assets/10eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
                     </Button>
 
@@ -72,8 +76,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="4" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_4">
-                        <Image Source="assets/20eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button  Background="White">
+                        <Image Source="assets/20eurocent.jpg" Width="70" Height="40"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer3" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -81,8 +85,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="6" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_5">
-                        <Image Source="assets/50eurocent.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button  Background="White">
+                        <Image Source="assets/50eurocent.jpg" Width="70" Height="40"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer4" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -90,8 +94,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="8" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_6">
-                        <Image Source="assets/1euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button  Background="White">
+                        <Image Source="assets/1euro.jpg" Width="70" Height="40"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer5" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -99,8 +103,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="10" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_7">
-                        <Image Source="assets/2euro.jpeg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button  Background="White">
+                        <Image Source="assets/2euro.jpeg" Width="70" Height="50" />
                     </Button>
 
                     <TextBox x:Name="tbKeer6" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -108,8 +112,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="12" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_8">
-                        <Image Source="assets/5 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/5 euro.png" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer7" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -117,8 +121,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="14" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_9">
-                        <Image Source="assets/10 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/10 euro.png" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer8" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -126,8 +130,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="16" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_10">
-                        <Image Source="assets/20 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/20 euro.jpg" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer9" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -135,8 +139,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="18" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_11">
-                        <Image Source="assets/50 euro.png" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/50 euro.png" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer10" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -144,8 +148,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="20" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_12">
-                        <Image Source="assets/100 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/100 euro.jpg" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer11" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -153,8 +157,8 @@
             </Button>
             <Button Grid.Column="1" Grid.Row="22" Background="Black">
                 <WrapPanel Width="300">
-                    <Button Click="Button_Click_13">
-                        <Image Source="assets/200 euro.jpg" Width="70" Height="50" Stretch="Fill"/>
+                    <Button >
+                        <Image Source="assets/200 euro.jpg" Width="90" Height="50" Stretch="Fill"/>
                     </Button>
 
                     <TextBox x:Name="tbKeer12" Width="50" HorizontalAlignment="Right" Text="0"/>
@@ -167,7 +171,7 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-
+            
             <Grid Grid.Row="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
@@ -187,7 +191,7 @@
                 <Label Grid.Row="2" Content="Verzekering:" FontSize="12" Foreground="White"/>
                 <Label Grid.Row="3" Content="Services:" FontSize="12" Foreground="White"/>
 
-                <ComboBox DropDownOpened="OnDropDownOpened" DropDownClosed="OnDropDownClosed" Grid.Row="1" Grid.Column="1" x:Name="cmbFiets">
+                <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cmbFiets" SelectionChanged="cmbFiets_SelectionChanged">
                     <ComboBoxItem  >Aanhangfiets  € 20,00</ComboBoxItem>
                     <ComboBoxItem >Bakfiets      € 35,00</ComboBoxItem>
                     <ComboBoxItem>Driewielfiets  € 30,00</ComboBoxItem>
@@ -202,7 +206,7 @@
                     <ComboBoxItem>Zitfiets € 15,00</ComboBoxItem>
                 </ComboBox>
 
-                <ComboBox DropDownOpened="OnDropDownOpened1" DropDownClosed="OnDropDownClosed1" Grid.Row="2" Grid.Column="1" x:Name="cmbVerzekering">
+                <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cmbVerzekering" SelectionChanged="cmbVerzekering_SelectionChanged">
                     <ComboBoxItem>NVT€ 0,00</ComboBoxItem>
                     <ComboBoxItem>Beschadigingen € 5,00</ComboBoxItem>
                     <ComboBoxItem>Diefstal € 10,00</ComboBoxItem>
@@ -210,7 +214,7 @@
                     <ComboBoxItem>Ongevallen € 2,50</ComboBoxItem>
                 </ComboBox>
 
-                <ComboBox DropDownOpened="OnDropDownOpened2" DropDownClosed="OnDropDownClosed2" Grid.Row="3" Grid.Column="1" x:Name="cmbService">
+                <ComboBox Grid.Row="3" Grid.Column="1" x:Name="cmbService" SelectionChanged="cmbService_SelectionChanged">
                     <ComboBoxItem>NVT € 0,00</ComboBoxItem>
                     <ComboBoxItem>Ophaalservice € 15,00</ComboBoxItem>
                     <ComboBoxItem>Regenpak € 10,00</ComboBoxItem>
@@ -220,12 +224,12 @@
 
                 
                 <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Dagen:" Foreground="White" FontSize="10"/>
-                <TextBox x:Name="tbDagen" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Text="0" Foreground="White" Background="Black" Margin="139,0,0,35" Height="18" VerticalAlignment="Bottom"/>
+                <TextBox x:Name="tbDagen" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Text="0" Foreground="White" Background="Black" Margin="139,0,0,35" Height="18" GotFocus="tbDagen_GotFocus" VerticalAlignment="Bottom"/>
 
-                <Button Background="Blue" FontSize="13" Foreground="White" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Bestel Artikel" Margin="0,35,0,0" Click="Button_Click"/>
+                <Button Background="Blue" FontSize="13" Foreground="White" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Bestel Artikel" Name="btnArtikel" Margin="0,35,0,0" Click="Bestel_Artikel"/>
 
             </Grid>
-            <ListBox  x:Name="lbBestelling" Grid.Row="1" Background="Black" Foreground="White" MouseDoubleClick="lbBestelling_MouseDoubleClick"/>
+            <ListBox x:Name="lbBestelling" Grid.Row="1" Background="Black" Foreground="White" MouseDoubleClick="lbBestelling_MouseDoubleClick"/>
             <Label HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Content="Te betalen bedrag:" Grid.Column="1" Grid.Row="2"/>
             <TextBlock x:Name="tbPrijs" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Text="€ 0,00" FontSize="20" Foreground="White"/>
 
@@ -234,9 +238,9 @@
         <Grid Grid.Row="3" Grid.Column="3" Background="Black">
             <Label Content="Betalen:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
             <Label Content="Geef handmatig bedrag in:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Margin="0,30,0,0"/>
-            <Button Background="DarkBlue" VerticalAlignment="Top" Width="150" Content="Geef totaalbedrag in" Foreground="White" FontSize="15" Margin="0,55,0,0" Click="Button_Click_14" />
+            <Button Background="DarkBlue" VerticalAlignment="Top" Width="150" Content="Geef totaalbedrag in" Foreground="White" FontSize="15" Margin="0,55,0,0" />
             <Label Content="Totaal gegeven bedrag:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,80,0,0"/>
-            <TextBox VerticalAlignment="Top" x:Name="tbHandmatig" HorizontalAlignment="Center" Margin="0,110,0,0" FontSize="30" Text="€ 0,00" Background="Black" Foreground="White"/>
+            <TextBox VerticalAlignment="Top" x:Name="tbHandmatig" HorizontalAlignment="Center" Margin="0,110,0,0" FontSize="30" Text="€ 0,00" Background="Black" Foreground="White" GotFocus="tbHandmatig_GotFocus"/>
 
         </Grid>
 
@@ -253,14 +257,21 @@
 
             <Grid Grid.Row="1" Background="Black">
                 <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Content="Afrekenen" FontSize="20"/>
-                <TextBlock x:Name="tbPrijs1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,0,0" Foreground="Green" Text="€ 0,00"  FontSize="30"/>
+                <TextBlock x:Name="afrekenenPrijs" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,0,0" Foreground="Green" Text="€ 0,00"  FontSize="30"/>
             </Grid>
 
-            <ListBox  x:Name="lbBestelling1" Grid.Row="2" Background="Black" Foreground="White" MouseDoubleClick="lbBestelling_MouseDoubleClick"/>
+            <ListBox  x:Name="afrekenenListBox" Grid.Row="2" Background="Black" Foreground="White" />
 
             <Grid Grid.Row="3" Background="Black">
                 <Button VerticalAlignment="Bottom"  HorizontalAlignment="Center" Content="Volgende klant" Background="Blue" Foreground="White" FontSize="15" Height="40" Click="Button_Click_1"/>
+              
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button Content="Klok" VerticalAlignment="Top" FontSize="30" Width="200" Height="50" Background="Blue" Foreground="White" Click="Klok_click"/>
+                <Button Content="Rekenmachine" VerticalAlignment="Bottom" FontSize="30" Width="200" Height="50" Background="Blue" Foreground="White" Click="rekenmachine_click"/>
             </Grid>
         </Grid>
+
+        <ProgressBar Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" Minimum="0" Maximum="60" Value="60" Name="pbStatus"></ProgressBar>
     </Grid>
 </Window>

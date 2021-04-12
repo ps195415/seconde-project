@@ -12,124 +12,87 @@ namespace Betaalsysteem
     /// </summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer = new DispatcherTimer();
 
-
+        string _cmbBoxString;
+        string[] _geknipteString;
 
         double _AantalGeld = 0;
         double _Handmatig = 0;
 
         //geld
-        double _5Cent = 0.05;
-        double _10Cent = 0.10;
-        double _20Cent = 0.20;
-        double _50Cent = 0.5;
-        double _1Euro = 1.00;
-        double _2Euro = 2.00;
-        double _5Euro = 5.00;
-        double _10Euro = 10.00;
-        double _20Euro = 20.00;
-        double _50Euro = 50.00;
-        double _100Euro = 100.00;
-        double _200Euro = 200.00;
-
-
         double _dagen = 0;
-
 
         double totaal = 0;
         double KrijgtTerug = 0;
-        double _Totaalbedrag = 0;
-
 
         double _cmbTotaalbedrag = 0.00;
-        double _cmbTotaalbedrag1 = 0.00;
-        double _cmbTotaalbedrag2 = 0.00;
 
         public MainWindow()
         {
             //idle timer, dit sluit de aplicatie af
             InitializeComponent();
 
-
-
-            InitializeComponent();
-            var timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(60) };
-            timer.Tick += delegate
-            {
-                timer.Stop();
-                this.Close();
-                timer.Start();
-            };
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
             timer.Start();
-            InputManager.Current.PostProcessInput += delegate (object s, ProcessInputEventArgs r)
-            {
-                if (r.StagingItem.Input is MouseButtonEventArgs || r.StagingItem.Input is KeyEventArgs)
-                    timer.Interval = TimeSpan.FromSeconds(60);
-            };
+            
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            pbStatus.Value--;
+           
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        // dit is de code dat er voor zorgt dat het listbox geupdate worden en ook de totaalprijs van listbox.
+        private void Bestel_Artikel(object sender, RoutedEventArgs e)
         {
-            _dagen = double.Parse(tbDagen.Text);
-
-
-
-
+         
             try
             {
+                pbStatus.Value = 60;
+                _dagen = double.Parse(tbDagen.Text);
 
                 if (cmbFiets.SelectedIndex > -1)
                 {
+                    //dit zet het fiets combobox in een string naar de listbox.
                     ComboBoxItem comboBoxStringBedrag = (ComboBoxItem)cmbFiets.SelectedItem;
-                    string geknitString = comboBoxStringBedrag.Content.ToString();
-                    string[] bedrag = geknitString.Split('€');
-                    _cmbTotaalbedrag = double.Parse(bedrag[1]);
+                    string cmbString = comboBoxStringBedrag.Content.ToString();
+                    string[] cmbBedrag = cmbString.Split('€');
+                    _cmbTotaalbedrag = double.Parse(cmbBedrag[1]);
+                    _cmbTotaalbedrag = _cmbTotaalbedrag * _dagen;
 
-
-                    lbBestelling.Items.Add(geknitString + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag * _dagen + ",00");
-                    totaal += (_cmbTotaalbedrag * _dagen);
-                    KrijgtTerug -= (_cmbTotaalbedrag * _dagen);
+                    lbBestelling.Items.Add(cmbString + ", " + _dagen + " dagen," + " totaal= € " + _cmbTotaalbedrag);
+                    totaal += _cmbTotaalbedrag;
+                    KrijgtTerug -= _cmbTotaalbedrag;
                 }
                 else if (cmbVerzekering.SelectedIndex > -1)
                 {
-                    ComboBoxItem comboBoxStringVerzekering = (ComboBoxItem)cmbVerzekering.SelectedItem;
-                    string geknitString1 = comboBoxStringVerzekering.Content.ToString();
-                    string[] bedrag1 = geknitString1.Split('€');
-                    _cmbTotaalbedrag1 = double.Parse(bedrag1[1]);
+                    ComboBoxItem comboBoxStringBedrag = (ComboBoxItem)cmbVerzekering.SelectedItem;
+                    string cmbString = comboBoxStringBedrag.Content.ToString();
+                    string[] cmbBedrag2 = cmbString.Split('€');
+                    _cmbTotaalbedrag = double.Parse(cmbBedrag2[1]);
+                    _cmbTotaalbedrag = _cmbTotaalbedrag * _dagen;
 
-
-                    lbBestelling.Items.Add(geknitString1 + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag1 * _dagen + ",00");
-                    totaal += (_cmbTotaalbedrag1 * _dagen);
-                    KrijgtTerug -= (_cmbTotaalbedrag1 * _dagen);
+                    lbBestelling.Items.Add(cmbString + ", " + _dagen + " dagen," + " totaal= € " + _cmbTotaalbedrag);
+                    totaal += _cmbTotaalbedrag;
+                    KrijgtTerug -= _cmbTotaalbedrag;
                 }
-                else
+                else if (cmbService.SelectedIndex > -1)
                 {
-                    ComboBoxItem comboBoxStringService = (ComboBoxItem)cmbService.SelectedItem;
-                    string geknitString2 = comboBoxStringService.Content.ToString();
-                    string[] bedrag2 = geknitString2.Split('€');
-                    _cmbTotaalbedrag2 = double.Parse(bedrag2[1]);
+                    ComboBoxItem comboBoxStringBedrag = (ComboBoxItem)cmbService.SelectedItem;
+                    string cmbString = comboBoxStringBedrag.Content.ToString();
+                    string[] cmbBedrag3 = cmbString.Split('€');
+                    _cmbTotaalbedrag = double.Parse(cmbBedrag3[1]);
+                    _cmbTotaalbedrag = _cmbTotaalbedrag * _dagen;
 
-
-                    lbBestelling.Items.Add(geknitString2 + ", " + _dagen + " dagen," + " totaal= €" + _cmbTotaalbedrag2 * _dagen + ",00");
-                    totaal += (_cmbTotaalbedrag2 * _dagen);
-                    KrijgtTerug -= (_cmbTotaalbedrag2 * _dagen);
+                    lbBestelling.Items.Add(cmbString + ", " + _dagen + " dagen," + " totaal= € " + _cmbTotaalbedrag);
+                    totaal += _cmbTotaalbedrag;
+                    KrijgtTerug -= _cmbTotaalbedrag;
                 }
-
-
-                tbPrijs.Text = "€ " + totaal + ",00 ";
-                tbPrijs1.Text = "€ " + KrijgtTerug + ",00 ";
-                cmbVerzekering.Visibility = Visibility.Visible;
-                cmbFiets.Visibility = Visibility.Visible;
-                cmbService.Visibility = Visibility.Visible;
-                cmbFiets.SelectedIndex = -1;
-                cmbService.SelectedIndex = -1;
-                cmbVerzekering.SelectedIndex = -1;
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-                tbDagen.Text = "0";
-
-
-
+                InitializeSettings();
 
             }
             catch (Exception)
@@ -141,108 +104,62 @@ namespace Betaalsysteem
                 }
                 return;
             }
-
-
-
-
-
         }
 
-
-
-
-
-        void OnDropDownOpened(object sender, EventArgs e)
+        private void InitializeSettings()
         {
-            if (cmbFiets.IsDropDownOpen == true)
-            {
-                cmbService.Visibility = Visibility.Hidden;
-                cmbVerzekering.Visibility = Visibility.Hidden;
-            }
+            tbPrijs.Text = "€ " + totaal.ToString("0.00");
+            afrekenenPrijs.Text = "€ " + KrijgtTerug.ToString("0.00");
+            cmbVerzekering.Visibility = Visibility.Visible;
+            cmbFiets.Visibility = Visibility.Visible;
+            cmbService.Visibility = Visibility.Visible;
+            cmbFiets.SelectedIndex = -1;
+            cmbService.SelectedIndex = -1;
+            cmbVerzekering.SelectedIndex = -1;
+            afrekenenPrijs.Foreground = new SolidColorBrush(Colors.Red);
+            tbDagen.Text = "0";
+
         }
 
-        void OnDropDownClosed(object sender, EventArgs e)
-        {
-            if (cmbFiets.IsDropDownOpen == false)
-            {
-                cmbService.Visibility = Visibility.Hidden;
-                cmbVerzekering.Visibility = Visibility.Hidden;
-            }
-        }
-        void OnDropDownOpened1(object sender, EventArgs e)
-        {
-            if (cmbFiets.IsDropDownOpen == true)
-            {
-                cmbFiets.Visibility = Visibility.Hidden;
-                cmbService.Visibility = Visibility.Hidden;
-            }
-        }
-
-        void OnDropDownClosed1(object sender, EventArgs e)
-        {
-            if (cmbFiets.IsDropDownOpen == false)
-            {
-                cmbFiets.Visibility = Visibility.Hidden;
-                cmbService.Visibility = Visibility.Hidden;
-            }
-        }
-        void OnDropDownOpened2(object sender, EventArgs e)
-        {
-            if (cmbFiets.IsDropDownOpen == true)
-            {
-                cmbVerzekering.Visibility = Visibility.Hidden;
-                cmbFiets.Visibility = Visibility.Hidden;
-            }
-        }
-
-        void OnDropDownClosed2(object sender, EventArgs e)
-        {
-            if (cmbFiets.IsDropDownOpen == false)
-            {
-                cmbVerzekering.Visibility = Visibility.Hidden;
-                cmbFiets.Visibility = Visibility.Hidden;
-            }
-        }
 
         private void lbBestelling_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-
-
-
-            if (lbBestelling.SelectedIndex != 1)
+            bool input = true;
+            double prijs = 0.00;
+            try
             {
-                string myString = lbBestelling.SelectedItem.ToString();
-                string[] myStringArray;
-                myStringArray = myString.Split('€');
-
-                try
+                pbStatus.Value = 60;
+                if (lbBestelling.SelectedIndex != -1)
                 {
-                    double regel = double.Parse(myStringArray[2]);
-                    totaal = totaal - regel;
-                    tbPrijs.Text = totaal.ToString("€0.00");
-
-
-
-
-
-                    object verwijderen = lbBestelling.SelectedItem;
-
-                    lbBestelling.SelectedItem = null;
-                    lbBestelling.Items.Remove(verwijderen);
-
+                    _cmbBoxString = lbBestelling.SelectedItem.ToString();
+                    _geknipteString = _cmbBoxString.Split('€');
+                    string temPrijs = _geknipteString[2];
+                    prijs = double.Parse(temPrijs);
+                    input = true;
 
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("oeps er is iets fout gegaan");
-                    throw;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ops, er is iets misgegaan!");
+            }
 
-                }
+            if (input == true)
+            {
+                object temp = lbBestelling.SelectedItem;
+                lbBestelling.SelectedItem = null;
+                lbBestelling.Items.Remove(temp);
+                totaal = totaal - prijs;
+                KrijgtTerug = KrijgtTerug + prijs;
+                lbBestelling.Items.Remove(lbBestelling.SelectedItem);
+                tbPrijs.Text = totaal.ToString("0.00");
+                afrekenenPrijs.Text = KrijgtTerug.ToString("0.00");
             }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            pbStatus.Value = 60;
             if (lbBestelling.Items.Count == 0)
             {
                 MessageBox.Show("zorg dat je een bestelling hebt geplaats", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -252,20 +169,7 @@ namespace Betaalsysteem
                 MessageBoxResult myResult = MessageBox.Show("heeft de klant al betaald?", "Vraag", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (myResult == MessageBoxResult.Yes)
                 {
-                    tbPrijs.Text = "€ " + totaal + ",00 ";
-                    cmbVerzekering.Visibility = Visibility.Visible;
-                    cmbFiets.Visibility = Visibility.Visible;
-                    cmbService.Visibility = Visibility.Visible;
-                    cmbFiets.SelectedIndex = -1;
-                    cmbService.SelectedIndex = -1;
-                    cmbVerzekering.SelectedIndex = -1;
-                    lbBestelling.Items.Clear();
-                    lbBestelling1.Items.Clear();
-                    tbDagen.Text = "0";
-                    tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-                    tbPrijs.Text = "€0,00";
-                    tbPrijs1.Text = "€0,00";
-                    KrijgtTerug = 0;
+                    InitializeSettings();
                 }
                 else
                 {
@@ -274,226 +178,81 @@ namespace Betaalsysteem
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer1.Text);
 
-            _Totaalbedrag = (_AantalGeld * _5Cent);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _5Cent + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
+        private void tbDagen_GotFocus(object sender, RoutedEventArgs e)
+        {
+            pbStatus.Value = 60;
+            tbDagen.Text = "";
+        }
+
+        private void Klok_click(object sender, RoutedEventArgs e)
+        {
+            pbStatus.Value = 60;
+            Klok win2 = new Klok();
+            win2.Show();
+            this.Hide();
+        }
+
+        private void rekenmachine_click(object sender, RoutedEventArgs e)
+        {
+            pbStatus.Value = 60;
+            Rekenmachine win2 = new Rekenmachine();
+            win2.Show();
+            this.Hide();
+        }
+
+        private void tbHandmatig_GotFocus(object sender, RoutedEventArgs e)
+        {
+            pbStatus.Value = 60;
+            tbHandmatig.Text = "";
+        }
+
+        private void cmbFiets_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            pbStatus.Value = 60;
+            if (cmbFiets.SelectedIndex != -1)
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
+                cmbService.Visibility = Visibility.Hidden;
+                cmbVerzekering.Visibility = Visibility.Hidden;
             }
             else
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
+                cmbService.Visibility = Visibility.Visible;
+                cmbVerzekering.Visibility = Visibility.Visible;
             }
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void cmbVerzekering_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            _AantalGeld = double.Parse(tbKeer2.Text);
-
-            _Totaalbedrag = (_AantalGeld * _10Cent);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _10Cent + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
+            pbStatus.Value = 60;
+            if (cmbVerzekering.SelectedIndex != -1)
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
+                cmbService.Visibility = Visibility.Hidden;
+                cmbFiets.Visibility = Visibility.Hidden;
             }
             else
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
+                cmbService.Visibility = Visibility.Visible;
+                cmbFiets.Visibility = Visibility.Visible;
             }
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void cmbService_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            _AantalGeld = double.Parse(tbKeer3.Text);
-
-            _Totaalbedrag = (_AantalGeld * _20Cent);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _20Cent + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
+            pbStatus.Value = 60;
+            if (cmbService.SelectedIndex != -1)
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
+                cmbFiets.Visibility = Visibility.Hidden;
+                cmbVerzekering.Visibility = Visibility.Hidden;
             }
             else
             {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
+                cmbFiets.Visibility = Visibility.Visible;
+                cmbVerzekering.Visibility = Visibility.Visible;
             }
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer4.Text);
-
-            _Totaalbedrag = (_AantalGeld * _50Cent);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _50Cent + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer5.Text);
-
-            _Totaalbedrag = (_AantalGeld * _1Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _1Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_7(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer6.Text);
-
-            _Totaalbedrag = (_AantalGeld * _2Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _2Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_8(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer7.Text);
-
-            _Totaalbedrag = (_AantalGeld * _5Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _5Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_9(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer8.Text);
-
-            _Totaalbedrag = (_AantalGeld * _10Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _10Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
 
 
-        }
-
-        private void Button_Click_10(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer9.Text);
-
-            _Totaalbedrag = (_AantalGeld * _20Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _20Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-
-        }
-
-        private void Button_Click_11(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer10.Text);
-
-            _Totaalbedrag = (_AantalGeld * _50Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _50Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_12(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer11.Text);
-
-            _Totaalbedrag = (_AantalGeld * _100Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _100Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-
-        private void Button_Click_13(object sender, RoutedEventArgs e)
-        {
-            _AantalGeld = double.Parse(tbKeer12.Text);
-
-            _Totaalbedrag = (_AantalGeld * _200Euro);
-            lbBestelling1.Items.Add(_AantalGeld + " Keer" + " €" + _200Euro + ".00");
-            tbPrijs1.Text = (KrijgtTerug += _Totaalbedrag).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
-        //handmatige invoer
-        private void Button_Click_14(object sender, RoutedEventArgs e)
-        {
-            _Handmatig = double.Parse(tbHandmatig.Text);
-
-            tbPrijs1.Text = (KrijgtTerug += _Handmatig).ToString("€0.00");
-            if (KrijgtTerug < 0)
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else
-            {
-                tbPrijs1.Foreground = new SolidColorBrush(Colors.Green);
-            }
-        }
     }
 }
