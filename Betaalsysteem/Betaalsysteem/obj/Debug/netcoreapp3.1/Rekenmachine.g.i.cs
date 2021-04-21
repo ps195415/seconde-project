@@ -61,7 +61,7 @@ namespace Betaalsysteem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Betaalsysteem;component/rekenmachine.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Betaalsysteem;V1.0.0.0;component/rekenmachine.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Rekenmachine.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

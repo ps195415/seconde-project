@@ -1,10 +1,12 @@
-table{
+.form{
+    position: relative;
+    width: 55%;
+}
+
+.form table{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 60%;
-    margin: auto;
-    position: relative;
-    top: 50px;
+    width: 100%;
 }
 
 table th{
@@ -20,8 +22,17 @@ td, th{
     padding: 8px;
 }
 
+
+.rightTb{
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: hidden;
+}
+
 @media screen and (max-width: 1024px) {
-    table{
+    .form{
         width: 90%;
+        margin: auto;
     }
+    
 }

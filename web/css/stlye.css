@@ -3,17 +3,19 @@
     padding: 0px;
 }
 .container{
-    width: 80%;
+    width: 60%;
     height: 150px;
     margin: auto;
 }
 
 .container-main{
-    height: 100%;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
 }
 
 .row{
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,11 +23,11 @@
 
 .mainRow{
     display: flex;
-    height: 100%;
+    height: 80%;
     width: 100%;
     justify-content: space-around;
 }
-
+/*end*/
 
 /* dit is de styling van de header*/
 header{
@@ -60,26 +62,15 @@ header input[type=text] {
     margin-right: 1px;
     font-size: 17px;
 }
+/*end*/
+
 
 
 /* hier komt het home page styling */
 
-.btn{
-    display: inline-block;
-    background: #7fc0c0;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5;
-}
-
-
-.OpeningMelding{
-    justify-self: flex-end;
-    align-self: flex-start ; 
-    position: relative;
-    top: 30px;
+.openingsCheck{
+    text-align: center; 
+    width: 100%;
 }
 
 .gallarySlider{
@@ -87,9 +78,9 @@ header input[type=text] {
     align-self: flex-start;
     position: relative;
     top: 30px;
-    width: 60%;
+    width: 80%;
     max-width: 900px;
-    height: 500px;
+    height: 100%;
   }
 
 
@@ -154,7 +145,7 @@ header input[type=text] {
     from {opacity: .4} 
     to {opacity: 1}
 }
-  
+/*end*/  
 
 
 
@@ -213,7 +204,7 @@ header input[type=text] {
 .card:hover{
     transform: translateY(-15px);
 }
-
+/*end*/
 
 
 
@@ -222,7 +213,6 @@ header input[type=text] {
     position: relative;
     top: 30px;
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
     width: 40%;
     margin: auto;
@@ -230,7 +220,7 @@ header input[type=text] {
 }
 
 
-.form input[type=text], select, textarea {
+.form input[type=text],input[type=number], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
@@ -253,12 +243,13 @@ header input[type=text] {
 .form input[type=submit]:hover {
     background-color: #45a049;
   }
-
+/*end*/
 
 
   /*dit is voor het openingstijd pagina */
 
 .container-Tijd{
+    height: 100vh;
     width: 70%;
     margin: auto;
     padding-bottom: 130px;
@@ -271,23 +262,23 @@ header input[type=text] {
     max-width: 400px;
     align-self: flex-start;
     position: relative;
-    top: 30px;
+    top: 22%;
 }
 
 .Contact-Img{
     position: relative;
-    top: 30px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 40%;
     margin: auto;
-    margin-bottom: 10px;
 }
 
 .Contact-Img img{
     width: 100%;
 }
+/*end*/
+
 
 
 /*dit is voor het over ons pagina  */
@@ -295,6 +286,84 @@ header input[type=text] {
 .overOnsText{
     width: 90%;
     margin: auto;
+}
+/*end*/
+
+/*dit is voor het FietsHuren pagina */
+
+.container-mini{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.afbFiets1{
+    flex-basis: 20%;
+}
+
+.afbFiets1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.afbFiets2{
+    flex-basis: 20%;
+}
+
+.afbFiets2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    background: #7fc0c0;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+    transition: background 0.5;
+    position: relative;
+    top: 20%;
+    float: right;
+}
+
+/*end*/
+
+
+/* dit is voor het FietsGegens pagina */
+
+article{
+    border-radius: 5px;
+    background-color: #9af0f0;
+    padding: 20px;
+    width: 200px;
+    height: 40%;
+    position: relative;
+    top: 30px;
+    float: left;
+}
+
+.container-Contact-h {
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    background-color: #b0d6d6;
+    padding: 20px;
+    width: 400px;
+    height: 70%;
+    margin-bottom: 10px;        
+}
+
+.container-Gegevens{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
   
@@ -312,8 +381,10 @@ header input[type=text] {
     
     .container-main{
         width: 100%;
+        height: 100%;
     }
     .container-Contact{
+        height: 100%;
         width: 90%;
     }
     .Contact-Img{
@@ -321,6 +392,7 @@ header input[type=text] {
     }
 
     .container-Tijd{
+        height: 100%;
         width: 100%;
     }
     .contactInfo{
@@ -341,12 +413,23 @@ header input[type=text] {
     .img-vanGroep{
         flex-basis: 100%;
     }
-}
 
-@media screen and (max-width:450px) {
-    .prev, .next{
-        top: 30%;
+    .afbFiets2{
+        margin: auto;
+        flex-basis: 90%;
+        height: 150px;
+    }
+
+    .afbFiets1{
+        margin: auto;
+        flex-basis: 90%;
+        height: 150px;
+    }
+
+    .container-Gegevens{
+        height: 100%;
     }
 }
+
 
 

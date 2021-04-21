@@ -85,7 +85,7 @@ namespace Betaalsysteem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Betaalsysteem;component/klok.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Betaalsysteem;V1.0.0.0;component/klok.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Klok.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

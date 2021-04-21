@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/stlye.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="icon" type="image/png" href="img/logo20x20.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/main.js"></script>
+    <script src="https://kit.fontawesome.com/350eedb788.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+    
 
     <header id="header">
         <div class="container">
@@ -38,7 +36,7 @@
                     <span style="font-size: 30px;" id="btnMenu" onclick="openNav()">&#9776;</span>
                 </div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="fietsen.html">Fietsen</a></li>
                     <li><a href="fietsHuren.html">FietsHuren</a></li>
                     <li><a href="Contact.html">Contact</a></li>
@@ -46,9 +44,10 @@
                     <li><a href="Overons.html">Over ons</a></li>
                 </ul>
             </div>
+
             <div id="MysidenarBar" class="SidenavBar">
                 <a class="closeBtn" style="font-size: 60px;" onclick="ColseBtn()">&times;</a>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
                 <a href="fietsen.html">Fietsen</a>
                 <a href="fietsHuren.html">FietsHuren</a>
                 <a href="Contact.html">Contact</a>
@@ -57,32 +56,52 @@
             </div>
         </div>
     </nav>
-
     <main id="main">
-        <div class="container-main">
-            <div class="mainRow">
-                <div class="gallarySlider">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="img/verhuur1.jpg" style="width:100%">
-                        </div>
+        <div class="container-Gegevens">
+            <div class="container-Contact-h">
+                <div class="form">
 
-                        <div class="mySlides fade" style="display: none;">
-                            <img src="img/verhuur2.jpg" style="width:100%">
-                        </div>
+                    <label for="fname">Naam</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Jouw Naam.." required>
 
-                        <div class="mySlides fade" style="display: none;">
-                            <img src="img/verhuur1.jpg" style="width:100%">
-                        </div>
+                    <label for="country">E-mail</label>
+                    <input type="text" id="e-mail" name="e-mail" placeholder="Jouw E-mail.." required>
 
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
+                    <label for="lname">Adres</label>
+                    <input type="text" id="adress" name="Lastname" placeholder="Adres .." required>
+
+                    <label for="lname">Stad</label>
+                    <input type="text" id="stad" name="Lastname" placeholder="Stad .." required>
+
+                    <label for="subject">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="Postcode.." required>
+
+                    <input onclick="Validation(document.getElementById('e-mail'), 'Dit is geen geldige E-mail.')" type="submit" value="Gegevens versturen">
+
                 </div>
+                
             </div>
-        </div>
 
+            <article>
+                <?php
+                    echo '<div class="my_items">';
+                    echo '<h2> Dit zijn uw keuze: </h2>';
+                    if(isset($_POST['checkList'])){
+                    foreach($_POST['checkList'] as $check){
+                    echo '<br>';
+                    echo '.'.$check;
+                    }
+                    
+                    }
+                    echo '</div>';
+                ?>
+            </article>
+        </div>
+        
     </main>
+
+    
+
 
     <footer id="footer">
         <div class="container-Footer">
@@ -91,16 +110,16 @@
                 <div class="col-1">
                     <h3>Informatie over winkel</h3>
                     <p><a href="Overons.html">Over ons</a></p>
-                    <p><a href="Overons.html">Contact</a></p>
-                    <p><a href="Overons.html">E-mail: info@fluitendefietser.nl</a></p>
+                    <p><a href="Contact.html">Contact</a></p>
+                    <p><a>E-mail: info@fluitendefietser.nl</a></p>
                 </div>
                 <div class="col-1">
                     <h3>Social-Media</h3>
-                    <p><a href="">Facebook</a></p>
+                    <p><a class="fab fa-facebook" href="https://www.facebook.com/fietsmagazine">Facebook</a></p>
                 </div>
                 <div class="col-1">
                     <h3>Algemeene voorwarden</h3>
-                    <p><a href="Overons.html">AGV</a></p>
+                    <p><a href="https://www.bovag.nl/BovagWebsite/media/BovagMediaFiles/Downloads/Garantie%20en%20voorwaarden/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf">AGV</a></p>
                 </div>
                 <div class="btnummer">
                     <div class="jaarduiding">
@@ -112,7 +131,5 @@
         </div>
     </footer>
 
-
 </body>
-
 </html>

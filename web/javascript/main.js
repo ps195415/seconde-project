@@ -1,3 +1,4 @@
+// dit is voor het open en sluiten van het menubar in tablet/Phone formaat.
 function openNav() {
   document.getElementById('MysidenarBar').style.width = "100%";
   document.getElementById('header').style.display = "none";
@@ -30,40 +31,49 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }
 
-//hier komt het openings tijd van het home page 
-var d = new Date();
 
-
-function Open_dicht() {
-
-}
-
-function Validation(){
-  var mail = document.getElementById('e-mail').value;
-  var regx = /^([a-zA-Z0-9/._])+@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-
-  if (!regx.text(mail)){
-    alert("Je hebt niet een geldig e-mail.")
+// dit check of het een goede e-mail is.
+function Validation(element, alertMSG) {
+  var regx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (element.value.match(regx)) {
+    element.value = "";
+    document.getElementById('fname').value = "";
+    document.getElementById('Lname').value = "";
+    document.getElementById('subject').value = "";
+    document.getElementById('number').value = "";
   }
-  else{
-    return;
+  else {
+    alert(alertMSG);
+    element.focus();
   }
 }
 
 
+// hier is het bestel button die het betellen regelt.
+function terms_changed(termsCheckBox){
+  //If the checkbox has been checked
+  if(termsCheckBox.checked){
+      //Set the disabled property to FALSE and enable the button.
+      document.getElementById("submit_button").disabled = false;
+  } else{
+      //Otherwise, disable the submit button.
+      document.getElementById("submit_button").disabled = true;
+  }
+}
+
+
+
+
+// deze functions zijn om de fietsen in fietspagina groter en kleiner te maken.
 function ImgGroter() {
 
   document.getElementById('card2').style.display = 'none';
@@ -77,7 +87,7 @@ function ImgGroter() {
 
 }
 
-function kleiner(){
+function kleiner() {
   document.getElementById('card2').style.display = 'block';
   document.getElementById('card3').style.display = 'block';
   document.getElementById('card4').style.display = 'block';

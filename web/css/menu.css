@@ -52,7 +52,16 @@ nav{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
+
+.shopOpenClose{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
 
 @media screen and (max-width:800px){
 
@@ -62,6 +71,10 @@ nav{
 
     li a{
         display: none;
+    }
+
+    .row{
+        justify-content: center;
     }
 
 }
